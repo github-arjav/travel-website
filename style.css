@@ -17,15 +17,15 @@ html{
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
-  html::-webkit-scrollbar{
+  html::scrollbar{
     width:1rem;
   }
   
-  html::-webkit-scrollbar-track{
+  html::scrollbar-track{
     background: #fff;
   }
   
-  html::-webkit-scrollbar-thumb{
+  html::scrollbar-thumb{
     background: #10221b;
   }
 
@@ -409,16 +409,207 @@ section{
   line-height: 2;
 }
 
+.reviews .slide .text{
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  background: #eee;
+  border-radius: .5rem;
+  color: #10221b;
+  line-height: 2;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 3rem;
+}
 
+.reviews .slide .text::before{
+  content: '';
+  position: absolute;
+  bottom: -1.5rem; left: .7rem;
+  height: 3rem;
+  width: 3rem;
+  background: #eee;
+  transform: rotate(45deg);
+}
 
+.reviews .slide .user{
+  display:flex;
+  align-items: center;
+  gap: 1rem;
+}
 
+.reviews .slide .user img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
 
+.reviews .slide .user h3{
+  font-size: 2rem;
+  color: #10221b;
+}
 
+.reviews .slide .user span{
+  color: #219150;
+  font-size: 1.5rem;
+}
 
+.blogs .slide{
+  text-align: center;
+  padding: 2rem;
+}
 
+.blogs .slide img{
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
 
+.blogs .slide .icons{
+  background: #10221b;
+  border-radius: .5rem;
+  padding: 1rem;
+  position: relative;
+  top: -2rem;
+  display: inline-block;
+}
 
+.blogs .slide .icons a {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 1rem;
+}
 
+.blogs .slide .icons a:hover {
+  color: #219150;
+}
+
+.blogs .slide .icons a i {
+  padding-right: .5rem;
+  color: #219150;
+}
+
+.blogs .slide h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+
+.blogs .slide p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  line-height: 2;
+  color: #10221b;
+}
+
+.newsletter {
+  background: #eee;
+}
+
+.newsletter .content {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.newsletter .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #10221b;
+}
+
+.newsletter .content form {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 5rem;
+  border: 0.2rem solid #10221b;
+  padding: .7rem;
+  display: flex;
+}
+
+.newsletter .content form .email {
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: #10221b;
+  padding: 0 1.3rem;
+}
+
+.newsletter .content form .btn {
+  margin-top: 0;
+  border-radius: 5rem;
+  background: #10221b;
+  color: #fff;
+}
+
+.newsletter .content form .btn:hover {
+  background: none;
+  color: #10221b;
+}
+
+.clients .silde {
+  text-align: center;
+}
+
+.clients .silde img {
+  height: 12rem;
+}
+
+.footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  color: #219150;
+  padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover {
+  color: #219150;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.footer .credit span {
+  color: #219150;
+}
 
 
 @media(max-width:1200px){
