@@ -1,5 +1,5 @@
 # travel-website
-This is an interactive website for adventure and tourism places.<br> <br>
+This is an interactive website for adventure and tourism places.<br>
 Main feature of this website are: <br>
 ✅ responsive header section with navbar menu toggle and search bar using vanilla javascript.<br>
 ✅ responsive home touch slider using swiper.js.<br>
