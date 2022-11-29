@@ -1,4 +1,4 @@
-# travel-website
+# Travel-Website
 This is an interactive website for adventure and tourism places.<br>
 Main feature of this website are: <br>
 ✅ responsive header section with navbar menu toggle and search bar using vanilla javascript.<br>
