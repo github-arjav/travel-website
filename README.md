@@ -16,3 +16,4 @@ Main feature of this website are: <br>
 ✅ responsive blogs section with touch slider using swiper.js. <br>
 ✅ responsive newsletter section. <br>
 ✅ responsive footer section using css grid. <br>
+✅ Ensuring easy navigation.
